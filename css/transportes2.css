@@ -1,0 +1,253 @@
+/* 
+font-family: 'Open Sans', sans-serif;*/
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px; /* base*/
+        line-height: 20px;
+
+        /* rem es body*/
+    }
+
+    header{
+        background-color: #2e64a1;/*rgb, rgba, #*/
+    /*padding:16px 0; es lo mismo*/
+    padding: 1rem 0; 
+    
+    
+    }
+
+    header h1{
+        color: white;
+        font-size: 40px;
+        font-weight: 100px;
+        font-style: italic;
+        display:inline-flex ;
+        position: relative;
+        bottom: 35px;
+        margin-left: 20px;
+
+    }
+
+   nav{
+       background-color: #6da9ed;
+       margin-bottom: 20px ;
+       
+   }
+
+   nav ul{
+       list-style: none;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       /*justify-content: stretch;*/
+       /*width: 100px;*/
+   }
+
+   nav ul li a{
+       color: white;
+       text-decoration: none;
+       padding: 3px 6px ;
+       display: block;
+       text-align: center;
+   }
+
+nav ul li a:hover{
+     background-color:rgba(0, 0, 0, 0.3);
+ }
+
+
+
+ nav ul li{
+    display: block;
+     flex-grow: 1;/*La propiedad flex-grow de CSS especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex),en su dirección principal.*/
+ }
+
+ footer{
+     background-color: #ccc;
+     clear: both;
+     color: #333;
+     text-align: center;
+     padding: 40px 0;
+     margin-top:20px;
+ }
+
+ .activo{
+     background-color:  #4c76a5;
+ }
+
+ /* no funciona con nav ul li a .activo*/
+
+.holder{
+    max-width: 960px; 
+    margin: 0 auto;
+}
+
+h2{
+    color:#2e64a1;
+    font-weight: 400;
+
+}
+
+/* INICIO HOME*/
+.bienvenidos{
+    width: 75%;
+    /*border: 1px solid black;*/ 
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p{
+    font-size: 20px;
+}
+
+.testimonio{
+    background-color: gray;
+    padding: 16px ;
+
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    background-color: yellow;
+    display: block; /*por si las palabras se suben*/
+
+}
+
+.testimonio .autor{
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    background-color: coral;
+    margin:12px 0; 
+} 
+
+
+/*FIN HOME*/
+
+
+
+/*INICIO HOME (NOSOTROS)*/
+.historia p {
+font-size: 12px; 
+
+}
+
+.persona{
+    
+ border: 1px #ccc solid;
+ border-radius: 5px;
+  width: 18%;
+  
+  text-align: center;
+  padding: 13px;
+  display: inline-block;
+  box-sizing: border-box;
+ 
+    /* preguntar*/
+ 
+}/*perfeccionamiento de una imagen en la caja
+margin-right: 2%;
+*/
+
+.persona:last-child{
+    margin-right: 0;
+}
+
+
+.persona:nth-child(odd){
+    background-color: crimson;
+}/*impar*/
+.persona:nth-child(even){
+    background-color: cadetblue;
+}/*.persona:nth-child(2n+1): cada dos hijos el primero tiene cierto color*/ 
+/*.persona:nth-child(even): numero par
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px black;
+}
+
+}
+.persona h5,
+.persona h6{
+    margin: 0;
+    font-weight: 0;
+    color:#2e64a1 ;
+
+}
+
+.persona h5{
+    font-size: 14px;
+    margin-top: 3px;
+
+}
+
+.persona h6{
+    font-style: italic;
+    font-size: 11px;
+}
+
+.persona p{
+    color: gray;
+    font-size: 10px;
+
+}
+
+
+
+
+/* border: 1px #ccc solid;
+ border-radius: 10px;
+  width:18% ; para hacer cajas como las de este ejemplo
+*/
+/* display block es para marcar la existencia de una caja*/
+
+
+
+
+
+
+
+/*FIN DE HOME (NOSOTROS)*/
+/*.persona:last-child{
+    margin-right: 0;
+}
+
+/*
+.persona:first-child{
+    margin-left: 0;
+}
+*/
+
+/* .persona:nth-child(3){
+    background-color: yellow;
+} */
+
+
+/* .persona:nth-child(2n+1) {
+    background-color: orange;
+} */
+
+/*.persona:nth-child(even) { /*par
+    background-color: yellow;
+}
+*/
+
+/*.persona:nth-child(odd) { /*impar*/
+ /*   background-color: orange;
+}*/
+
+
